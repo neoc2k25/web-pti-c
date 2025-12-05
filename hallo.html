@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <!-- FONT PIXEL -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            height: 150vh;
+            background: radial-gradient(circle at top, #0e0220, #000014);
+            overflow-x: hidden;
+            font-family: "Press Start 2P", cursive;
+        }
+
+        /* Background bintang */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 130%;
+            height: 130%;
+            background:
+                radial-gradient(3px 3px at 20% 30%, white, transparent),
+                radial-gradient(3px 3px at 80% 70%, white, transparent),
+                radial-gradient(3px 3px at 50% 90%, white, transparent),
+                radial-gradient(3px 3px at 10% 80%, white, transparent),
+                radial-gradient(3px 3px at 95% 40%, white, transparent),
+                radial-gradient(3px 3px at 60% 10%, white, transparent),
+                radial-gradient(3px 3px at 40% 50%, white, transparent),
+                radial-gradient(3px 3px at 30% 20%, white, transparent),
+                radial-gradient(3px 3px at 70% 85%, white, transparent);
+            opacity: 0.8;
+            animation: starsMove 20s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes starsMove {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-250px); }
+        }
+
+        /* HI NAMA */
+        #hiName {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            font-size: 32px;
+            z-index: 10;
+            animation: rainbowText 3s linear infinite;
+        }
+
+        @keyframes rainbowText {
+            0% { color: #ff005e; }
+            25% { color: #ffea00; }
+            50% { color: #00eaff; }
+            75% { color: #ff00f7; }
+            100% { color: #ff005e; }
+        }
+
+        /* GARIS Y2K */
+        #y2kLine {
+            position: absolute;
+            top: 75px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #ff00ff, #00eaff, #ff00ff);
+            box-shadow: 0 0 10px #ff00ff, 0 0 15px #00eaff;
+            z-index: 10;
+        }
+
+        /* GAMBAR NECO */
+        #necoImage {
+            position: absolute;
+            top: 200px;
+            left: 20%;
+            transform: translateX(-50%);
+            width: 330px;
+            z-index: 20;
+            filter: drop-shadow(0 0 12px #ff00ff);
+            animation: floatNeco 3s ease-in-out infinite;
+        }
+
+        @keyframes floatNeco {
+            0% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-8px); }
+            100% { transform: translateX(-50%) translateY(0); }
+        }
+
+        /* TEKS (Arial) */
+        #messageBox {
+            position: absolute;
+            top: 200px;
+            left: 40%;
+            width: 50%;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: white;
+            line-height: 1.6;
+            z-index: 20;
+            white-space: pre-line;
+        }
+
+        /* BUTTON */
+        #scrollBtn {
+            position: absolute;
+            top: 600px;
+            left: 70%;
+            padding: 12px 18px;
+            border: none;
+            background: #00eaff;
+            color: black;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 6px;
+            font-weight: bold;
+            z-index: 30;
+            transition: 0.2s;
+        }
+
+        #scrollBtn:hover {
+            transform: scale(1.1);
+            background: #7df3ff;
+        }
+
+        /* VIDEO */
+        #videoContainer {
+            opacity: 0;
+            transition: opacity 1.2s ease-in-out;
+            position: absolute;
+            top: 750px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 30;
+        }
+
+        #videoContainer.show {
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- NAMA -->
+    <div id="hiName"></div>
+
+    <!-- GARIS -->
+    <div id="y2kLine"></div>
+
+    <!-- GAMBAR NECO -->
+    <img id="necoImage" src="public/neco.png" alt="Neco">
+
+    <!-- TEKS -->
+    <div id="messageBox"></div>
+
+    <!-- BUTTON -->
+    <button id="scrollBtn">Lihat Video 📹</button>
+
+    <!-- VIDEO -->
+    <div id="videoContainer">
+        <video width="480" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <script>
+        /* Nama user */
+        const urlParams = new URLSearchParams(window.location.search);
+        const nama = urlParams.get("name") || "User";
+        document.getElementById("hiName").textContent = "HI! " + nama.toUpperCase();
+
+        /* TEXT */
+        const text = 
+`Hi guys! Seperti yang kalian tahu, aku Neco — maskot dari Neo-C.
+Pertama-tama aku mau ngasih kalian semangat buat ngerjain TA (Tugas Akhir), tugas-tugas lainnya dan jangan lupa belajar buat UAS.
+
+Percayalah, kalian harus benar-benar menikmati masa kuliah ini sebelum masuk ke dunia kerja — sebelum kalian merindukan suasana kelas, laprak, positron, tugas bareng, dan momen-momen seru bersama teman-teman.
+
+Kadang kita merasa kurang bersyukur karena nggak bisa kuliah di kampus impian, tapi tanpa kalian sadari, banyak banget orang di luar sana yang ingin ada di posisi kalian. Kalian itu pemenang. Sesekali coba lihat ke bawah dan syukuri sejauh apa kalian sudah melangkah.
+
+Dan buat teman-teman yang linjur, jangan khawatir. Kalian pasti bisa kok! Kalian nggak sendirian. Kalau bingung atau kesulitan, jangan ragu buat tanya-tanya ke teman — pasti dibantu.
+
+So enjoy the process guys!
+
+Sampai jumpa di semester 2! 👋`;
+
+        /* Typewriter */
+        let index = 0;
+        const speed = 18;
+
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("messageBox").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        typeWriter();
+
+        /* BUTTON: Scroll + Munculin video */
+        const btn = document.getElementById("scrollBtn");
+        const videoBox = document.getElementById("videoContainer");
+
+        btn.addEventListener("click", () => {
+            window.scrollTo({ top: 600, behavior: 'smooth' });
+            setTimeout(() => {
+                videoBox.classList.add("show");
+            }, 600);
+        });
+    </script>
+
+</body>
+</html>
