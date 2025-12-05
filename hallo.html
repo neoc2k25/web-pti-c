@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <!-- FONT PIXEL -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            height: 150vh;
+            background: radial-gradient(circle at top, #0e0220, #000014);
+            overflow-x: hidden;
+            font-family: "Press Start 2P", cursive;
+        }
+
+        /* Background bintang */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 150%;
+            height: 150%;
+            background:
+                radial-gradient(3px 3px at 20% 30%, white, transparent),
+                radial-gradient(3px 3px at 80% 70%, white, transparent),
+                radial-gradient(3px 3px at 50% 90%, white, transparent),
+                radial-gradient(3px 3px at 10% 80%, white, transparent),
+                radial-gradient(3px 3px at 95% 40%, white, transparent),
+                radial-gradient(3px 3px at 60% 10%, white, transparent),
+                radial-gradient(3px 3px at 40% 50%, white, transparent),
+                radial-gradient(3px 3px at 30% 20%, white, transparent),
+                radial-gradient(3px 3px at 70% 85%, white, transparent);
+            opacity: 0.8;
+            animation: starsMove 20s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes starsMove {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-250px); }
+        }
+
+        /* BUTTON MEMBER — pojok kanan atas */
+        #memberBtn {
+            position: fixed;
+            top: 18px;
+            right: 18px;
+            z-index: 9999; /* paling atas */
+            background: #00eaff;
+            color: black;
+            font-family: "Press Start 2P", cursive;
+            font-size: 12px;
+            padding: 10px 14px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.2s;
+            box-shadow: 0 0 8px #00eaff;
+        }
+
+        #memberBtn:hover {
+            transform: scale(1.1);
+            background: #7df3ff;
+        }
+
+        /* HI NAMA */
+        #hiName {
+            margin-top: 25px;
+            margin-left: 25px;
+            font-size: 28px;
+            z-index: 10;
+            position: relative;
+            animation: rainbowText 3s linear infinite;
+        }
+
+        @keyframes rainbowText {
+            0% { color: #ff005e; }
+            25% { color: #ffea00; }
+            50% { color: #00eaff; }
+            75% { color: #ff00f7; }
+            100% { color: #ff005e; }
+        }
+
+        /* GARIS Y2K */
+        #y2kLine {
+            margin-top: 10px;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, #ff00ff, #00eaff, #ff00ff);
+            box-shadow: 0 0 10px #ff00ff, 0 0 15px #00eaff;
+            z-index: 10;
+            position: relative;
+        }
+
+        /* NECO + TEKS WRAPPER */
+        .contentWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 25px;
+            margin-top: 80px;
+            padding: 0 20px;
+            position: relative;
+            flex-wrap: wrap;
+        }
+
+        /* GAMBAR NECO */
+        #necoImage {
+            width: 280px;
+            max-width: 90%;
+            filter: drop-shadow(0 0 12px #ff00ff);
+            animation: floatNeco 3s ease-in-out infinite;
+        }
+
+        @keyframes floatNeco {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* TEKS */
+        #messageBox {
+            width: 400px;
+            max-width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            color: white;
+            line-height: 1.6;
+            white-space: pre-line;
+        }
+
+        /* BUTTON SCROLL */
+        #scrollBtn {
+            margin-top: 40px;
+            padding: 12px 18px;
+            border: none;
+            background: #00eaff;
+            color: black;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 6px;
+            font-weight: bold;
+            z-index: 30;
+            transition: 0.2s;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #scrollBtn:hover {
+            transform: scale(1.1);
+            background: #7df3ff;
+        }
+
+        /* VIDEO */
+        #videoContainer {
+            opacity: 0;
+            transition: opacity 1.2s ease-in-out;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        #videoContainer.show {
+            opacity: 1;
+        }
+
+        video {
+            width: 90%;
+            max-width: 480px;
+            border-radius: 10px;
+        }
+
+        /* 📱 RESPONSIVE HP */
+        @media (max-width: 600px) {
+            #hiName {
+                font-size: 22px;
+                margin-left: 15px;
+            }
+
+            #messageBox {
+                font-size: 14px;
+            }
+
+            #memberBtn {
+                font-size: 10px;
+                padding: 8px 10px;
+                top: 12px;
+                right: 12px;
+            }
+
+            .contentWrapper {
+                text-align: center;
+                margin-top: 60px;
+            }
+
+            #necoImage {
+                width: 230px;
+            }
+
+            #scrollBtn {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BUTTON MEMBER -->
+    <button id="memberBtn" onclick="window.location.href='member.html'">Member</button>
+
+    <div id="hiName"></div>
+    <div id="y2kLine"></div>
+
+    <div class="contentWrapper">
+        <img id="necoImage" src="public/neco.png" alt="Neco">
+        <div id="messageBox"></div>
+    </div>
+
+    <button id="scrollBtn">Lihat Video 📹</button>
+
+    <div id="videoContainer">
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        /* Nama user */
+        const urlParams = new URLSearchParams(window.location.search);
+        const nama = urlParams.get("name") || "User";
+        document.getElementById("hiName").textContent = "HI! " + nama.toUpperCase();
+
+        /* TEXT */
+        const text = 
+`Hi guys! Seperti yang kalian tahu, aku Neco — maskot dari Neo-C.
+Pertama-tama aku mau ngasih kalian semangat buat ngerjain TA (Tugas Akhir), tugas-tugas lainnya dan jangan lupa belajar buat UAS.
+
+Percayalah, kalian harus benar-benar menikmati masa kuliah ini sebelum masuk ke dunia kerja — sebelum kalian merindukan suasana kelas, laprak, positron, tugas bareng, dan momen-momen seru bersama teman-teman.
+
+Kadang kita merasa kurang bersyukur karena nggak bisa kuliah di kampus impian, tapi tanpa kalian sadari, banyak banget orang di luar sana yang ingin ada di posisi kalian. Kalian itu pemenang. Sesekali coba lihat ke bawah dan syukuri sejauh apa kalian sudah melangkah.
+
+Dan buat teman-teman yang linjur, jangan khawatir. Kalian pasti bisa kok! Kalian nggak sendirian. Kalau bingung atau kesulitan, jangan ragu buat tanya-tanya ke teman — pasti dibantu.
+
+So enjoy the process guys!
+
+Sampai jumpa di semester 2! 👋`;
+
+        let index = 0;
+        const speed = 18;
+
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("messageBox").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        typeWriter();
+
+        /* Scroll + Munculin video */
+        const btn = document.getElementById("scrollBtn");
+        const videoBox = document.getElementById("videoContainer");
+
+        btn.addEventListener("click", () => {
+            window.scrollTo({ top: window.innerHeight - 100, behavior: 'smooth' });
+            setTimeout(() => videoBox.classList.add("show"), 600);
+        });
+    </script>
+
+</body>
+</html>
