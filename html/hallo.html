@@ -1,158 +1,240 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<title>Welcome</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
 
-<!-- FONT PIXEL -->
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- FONT PIXEL -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
 
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html,body { height: 100%; }
+    <style>
+      body {
+        margin: 0;
+        height: 150vh;
+        background: radial-gradient(circle at top, #0e0220, #000014);
+        overflow-x: hidden;
+        font-family: "Press Start 2P", cursive;
+      }
 
-  body {
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle at top, #0e0220, #000014);
-    overflow: hidden;
-    padding: 0 12px;
-  }
+      /* Background bintang */
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 130%;
+        height: 130%;
+        background: radial-gradient(3px 3px at 20% 30%, white, transparent),
+          radial-gradient(3px 3px at 80% 70%, white, transparent),
+          radial-gradient(3px 3px at 50% 90%, white, transparent),
+          radial-gradient(3px 3px at 10% 80%, white, transparent),
+          radial-gradient(3px 3px at 95% 40%, white, transparent),
+          radial-gradient(3px 3px at 60% 10%, white, transparent),
+          radial-gradient(3px 3px at 40% 50%, white, transparent),
+          radial-gradient(3px 3px at 30% 20%, white, transparent),
+          radial-gradient(3px 3px at 70% 85%, white, transparent);
+        opacity: 0.8;
+        animation: starsMove 20s linear infinite;
+        z-index: 1;
+      }
 
-  /* Stars */
-  .stars {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    z-index: 1;
-    background:
-      radial-gradient(1.6px 1.6px at 10% 20%, #ffffffaa, transparent),
-      radial-gradient(1.6px 1.6px at 30% 10%, #ffffffaa, transparent),
-      radial-gradient(1.6px 1.6px at 50% 18%, #ffffffaa, transparent),
-      radial-gradient(1.6px 1.6px at 70% 85%, #ffffffaa, transparent),
-      radial-gradient(1.6px 1.6px at 95% 40%, #ffffffaa, transparent),
-      radial-gradient(1.6px 1.6px at 60% 10%, #ffffffaa, transparent);
-    opacity: 0.6;
-    animation: starsMove 24s linear infinite;
-  }
+      @keyframes starsMove {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-250px);
+        }
+      }
 
-  @keyframes starsMove {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-120px); }
-  }
+      /* HI NAMA */
+      #hiName {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        font-size: 32px;
+        z-index: 10;
+        animation: rainbowText 3s linear infinite;
+      }
 
-  /* WRAPPER */
-  .center-wrapper {
-    position: relative;
-    z-index: 10;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-    width: 100%;
-    max-width: 360px;
-  }
+      @keyframes rainbowText {
+        0% {
+          color: #ff005e;
+        }
+        25% {
+          color: #ffea00;
+        }
+        50% {
+          color: #00eaff;
+        }
+        75% {
+          color: #ff00f7;
+        }
+        100% {
+          color: #ff005e;
+        }
+      }
 
-  .welcome-container {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    align-items: center;
-  }
+      /* GARIS Y2K */
+      #y2kLine {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(to right, #ff00ff, #00eaff, #ff00ff);
+        box-shadow: 0 0 10px #ff00ff, 0 0 15px #00eaff;
+        z-index: 10;
+      }
 
-  .welcome-container img {
-    width: 78px;
-    height: 78px;
-    object-fit: contain;
-  }
+      /* GAMBAR NECO */
+      #necoImage {
+        position: absolute;
+        top: 200px;
+        left: 20%;
+        transform: translateX(-50%);
+        width: 330px;
+        z-index: 20;
+        filter: drop-shadow(0 0 12px #ff00ff);
+        animation: floatNeco 3s ease-in-out infinite;
+      }
 
-  h1 {
-    font-family: "Press Start 2P", cursive;
-    font-size: 18px;
-    color: #00eaff;
-    text-shadow: 0 0 8px #00bcd4;
-    line-height: 1.3;
-    letter-spacing: -1px;
-  }
+      @keyframes floatNeco {
+        0% {
+          transform: translateX(-50%) translateY(0);
+        }
+        50% {
+          transform: translateX(-50%) translateY(-8px);
+        }
+        100% {
+          transform: translateX(-50%) translateY(0);
+        }
+      }
 
-  .form-group { width: 100%; }
+      /* TEKS (Arial) */
+      #messageBox {
+        position: absolute;
+        top: 200px;
+        left: 40%;
+        width: 50%;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: white;
+        line-height: 1.6;
+        z-index: 20;
+        white-space: pre-line;
+      }
 
-  input[type="text"] {
-    width: 100%;
-    padding: 14px 14px;
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.9);
-    border-radius: 8px;
-    color: #ddd;
-    font-size: 14px;
-  }
+      /* BUTTON */
+      #scrollBtn {
+        position: absolute;
+        top: 600px;
+        left: 70%;
+        padding: 12px 18px;
+        border: none;
+        background: #00eaff;
+        color: black;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 6px;
+        font-weight: bold;
+        z-index: 30;
+        transition: 0.2s;
+      }
 
-  .btn-masuk {
-    margin-top: 10px;
-    padding: 12px 18px;
-    font-family: "Press Start 2P", cursive;
-    font-size: 12px;
-    border: none;
-    cursor: pointer;
-    border-radius: 12px;
-    display: inline-block;
-    background: linear-gradient(45deg, #ffba3e 0%, #ffd84d 40%, #00eaff 100%);
-    background-size: 200% 200%;
-    animation: rainbow 4s linear infinite;
-    color: white;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-    box-shadow: 0 6px 18px rgba(0,234,255,0.12), inset 0 0 10px rgba(255,255,255,0.06);
-  }
+      #scrollBtn:hover {
+        transform: scale(1.1);
+        background: #7df3ff;
+      }
 
-  @keyframes rainbow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
+      /* VIDEO */
+      #videoContainer {
+        opacity: 0;
+        transition: opacity 1.2s ease-in-out;
+        position: absolute;
+        top: 750px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 30;
+      }
 
-  /* Mobile Fix */
-  @media (max-width: 480px) {
-    .welcome-container img { width: 64px; height: 64px; }
-    h1 { font-size: 14px; letter-spacing: -1px; }
-    .btn-masuk { padding: 10px 14px; font-size: 10px; }
-    input[type="text"] { padding: 12px; font-size: 13px; }
-  }
-</style>
-</head>
+      #videoContainer.show {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAMA -->
+    <div id="hiName"></div>
 
-<body>
+    <!-- GARIS -->
+    <div id="y2kLine"></div>
 
-  <div class="stars"></div>
+    <!-- GAMBAR NECO -->
+    <img id="necoImage" src="public/neco.png" alt="Neco" />
 
-  <div class="center-wrapper">
-    <div class="welcome-container">
-      <img src="public/logo-removebg-preview.png" alt="Logo NEO-C">
-      <h1>NEO-C 2025</h1>
+    <!-- TEKS -->
+    <div id="messageBox"></div>
+
+    <!-- BUTTON -->
+    <button id="scrollBtn">Lihat Video 📹</button>
+
+    <!-- VIDEO -->
+    <div id="videoContainer">
+      <video width="480" controls>
+        <source src="video.mp4" type="video/mp4" />
+      </video>
     </div>
 
-    <div class="form-group">
-      <input type="text" id="fname" placeholder="Masukkan Nama mu disini....">
-    </div>
+    <script>
+      /* Nama user */
+      const urlParams = new URLSearchParams(window.location.search);
+      const nama = urlParams.get("name") || "User";
+      document.getElementById("hiName").textContent =
+        "HI! " + nama.toUpperCase();
 
-    <!-- FIXED: tombol kirim nama -->
-    <a class="btn-masuk" href="#" onclick="goToNextPage()">MASUK</a>
-  </div>
+      /* TEXT */
+      const text = `Hi guys! Seperti yang kalian tahu, aku Neco — maskot dari Neo-C.
+Pertama-tama aku mau ngasih kalian semangat buat ngerjain TA (Tugas Akhir), tugas-tugas lainnya dan jangan lupa belajar buat UAS.
 
-<script>
-function goToNextPage() {
-  const name = document.getElementById("fname").value.trim();
-  if (name === "") {
-    alert("Masukkan nama dulu!");
-    return;
-  }
-  window.location.href = "hallo.html?name=" + encodeURIComponent(name);
-}
-</script>
+Percayalah, kalian harus benar-benar menikmati masa kuliah ini sebelum masuk ke dunia kerja — sebelum kalian merindukan suasana kelas, laprak, positron, tugas bareng, dan momen-momen seru bersama teman-teman.
 
-</body>
+Kadang kita merasa kurang bersyukur karena nggak bisa kuliah di kampus impian, tapi tanpa kalian sadari, banyak banget orang di luar sana yang ingin ada di posisi kalian. Kalian itu pemenang. Sesekali coba lihat ke bawah dan syukuri sejauh apa kalian sudah melangkah.
+
+Dan buat teman-teman yang linjur, jangan khawatir. Kalian pasti bisa kok! Kalian nggak sendirian. Kalau bingung atau kesulitan, jangan ragu buat tanya-tanya ke teman — pasti dibantu.
+
+So enjoy the process guys!
+
+Sampai jumpa di semester 2! 👋`;
+
+      /* Typewriter */
+      let index = 0;
+      const speed = 18;
+
+      function typeWriter() {
+        if (index < text.length) {
+          document.getElementById("messageBox").innerHTML += text.charAt(index);
+          index++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+      typeWriter();
+
+      /* BUTTON: Scroll + Munculin video */
+      const btn = document.getElementById("scrollBtn");
+      const videoBox = document.getElementById("videoContainer");
+
+      btn.addEventListener("click", () => {
+        window.scrollTo({ top: 600, behavior: "smooth" });
+        setTimeout(() => {
+          videoBox.classList.add("show");
+        }, 600);
+      });
+    </script>
+  </body>
 </html>
