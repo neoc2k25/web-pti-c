@@ -33,6 +33,6 @@ export const useForced = create(
         set({ step: data });
       },
     }),
-    { name: "_CurrentSte" }
+    { name: "_CurrentStepTim" }
   )
 );

@@ -26,10 +26,10 @@
 #necoImage {
   z-index: 20;
   filter: drop-shadow(0 0 12px #ff00ff);
-  animation: floatNeco 3s ease-in-out infinite;
+  animation: float 3s ease-in-out infinite;
 }
 
-@keyframes floatNeco {
+@keyframes float {
   0% {
     transform: translateY(0);
   }
@@ -123,4 +123,33 @@
       #00eaff 270deg 360deg
     );
   }
+}
+
+.animate-left-to-mid {
+  animation: leftToMid 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes leftToMid {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@keyframes leftToLeft {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+.animate-left-to-left {
+  animation: leftToLeft 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }

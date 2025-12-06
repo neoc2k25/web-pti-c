@@ -3,187 +3,224 @@
     {
       "id": 1,
       "nama": "MUHAMMAD ZAKY ZHALIFUNNAS",
-      "foto": "/neco.png"
+      "foto1": "/members/jaki.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 2,
       "nama": "NABILAH NUR RAMADHANIA",
-      "foto": "/neco.png"
+      "foto1": "/members/nabilah.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 3,
       "nama": "NABILA NUR RIZKIYAH",
-      "foto": "/neco.png"
+      "foto1": "/members/nabila.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 4,
       "nama": "NADYA SHAFWAH AZAHRAH",
-      "foto": "/neco.png"
+      "foto1": "/members/nadya.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 5,
       "nama": "NAJMA AMAMI PRIYANGGA",
-      "foto": "/neco.png"
+      "foto1": "/members/najma.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 6,
       "nama": "NANDA MUHAMMAD RIFKI ARDIANSYAH",
-      "foto": "/neco.png"
+      "foto1": "/members/nanda.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 7,
       "nama": "NATA BAGUS IRAWAN",
-      "foto": "/neco.png"
+      "foto1": "/members/nata.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 8,
       "nama": "NOVA ARDIANTI",
-      "foto": "/neco.png"
+      "foto1": "/necos/neco.png",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 9,
       "nama": "NUR 'AINI LATIYAH",
-      "foto": "/neco.png"
+      "foto1": "/members/nabila.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 10,
       "nama": "NUR HIDAYATULLAH SYAHPUTRA",
-      "foto": "/neco.png"
+      "foto1": "/members/putra.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 11,
       "nama": "NURUS SILMI KAFFAH",
-      "foto": "/neco.png"
+      "foto1": "/members/silmi.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 12,
       "nama": "PAKSI ATHAR KRISTIYADY",
-      "foto": "/neco.png"
+      "foto1": "/members/paksi.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 13,
       "nama": "QATRUNNADA AULIA BARID",
-      "foto": "/neco.png"
+      "foto1": "/members/nada.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 14,
       "nama": "RACHMAD PRADANA WIBOWO",
-      "foto": "/neco.png"
+      "foto1": "/members/dana.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 15,
       "nama": "RAFA FATIH SUBEKTI",
-      "foto": "/neco.png"
+      "foto1": "/members/fatih.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 16,
       "nama": "RAHAYU ILMI AMALIA",
-      "foto": "/neco.png"
+      "foto1": "/members/el.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 17,
       "nama": "RAIHAN GARIN DWI SAPUTRA",
-      "foto": "/neco.png"
+      "foto1": "/members/rehan.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 18,
       "nama": "RANGGA ADI YUDDIN",
-      "foto": "/neco.png"
+      "foto1": "/members/rangga.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 19,
       "nama": "RAPSULI GEMA NUSANTARA",
-      "foto": "/neco.png"
+      "foto1": "/members/rap.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 20,
       "nama": "RATNA PARAMITA",
-      "foto": "/neco.png"
+      "foto1": "/members/ratna.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 21,
       "nama": "RAYMOND ABHI PRAYA",
-      "foto": "/neco.png"
+      "foto1": "/members/remon.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 22,
       "nama": "RENO NALA PRATAMA",
-      "foto": "/neco.png"
+      "foto1": "/members/reno.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 23,
       "nama": "REZA ARINA NAJIHA",
-      "foto": "/neco.png"
+      "foto1": "/members/rere.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 24,
       "nama": "RINALDI MULYA PUTRA",
-      "foto": "/neco.png"
+      "foto1": "/members/rinaldi.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 25,
       "nama": "RYAN AL FAHREZI",
-      "foto": "/neco.png"
+      "foto1": "/members/rian.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 26,
       "nama": "SALMA PUTRI KISWORO",
-      "foto": "/neco.png"
+      "foto1": "/members/salma.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 27,
       "nama": "SEKAR ANINDITA DEWI",
-      "foto": "/neco.png"
+      "foto1": "/members/sekar.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 28,
       "nama": "SINTYA DEVI NUR AINI",
-      "foto": "/neco.png"
+      "foto1": "/members/sintya.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 29,
       "nama": "SUCI AULIA",
-      "foto": "/neco.png"
+      "foto1": "/members/neco.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 30,
       "nama": "SURYANI MUKLAS SYAHPUTRI",
-      "foto": "/neco.png"
+      "foto1": "/members/suryani.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 31,
       "nama": "THERESA NATHALIE DAVNY WOWILING",
-      "foto": "/neco.png"
+      "foto1": "/members/tesa.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 32,
       "nama": "TIARA SYIFA SEPTIRA AZZAHRA",
-      "foto": "/neco.png"
+      "foto1": "/members/neco.png",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 33,
       "nama": "USAM MUHAZIR",
-      "foto": "/neco.png"
+      "foto1": "/members/hajir.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 34,
       "nama": "VALDIEN ACHMAD ALDHYMA",
-      "foto": "/neco.png"
+      "foto1": "/members/valdin.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 35,
       "nama": "WAILDAN ARASYADHA",
-      "foto": "/neco.png"
+      "foto1": "/members/arsad.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 36,
       "nama": "ZEVA AFINA FAZA SORAYA",
-      "foto": "/neco.png"
+      "foto1": "/members/zefa.jpg",
+      "foto2": "/necos/neco.png"
     },
     {
       "id": 37,
       "nama": "ZUDA PRIMADINATA HIDAYATULLAH",
-      "foto": "/neco.png"
+      "foto1": "/members/zuda.jpg",
+      "foto2": "/necos/neco.png"
     }
   ]
 }

@@ -45,8 +45,8 @@ const WelcomePage = () => {
         <div className="w-full flex flex-col md:flex-row justify-evenly items-center ">
           <img
             id="necoImage"
-            className="w-52 md:w-96"
-            src="/neco.png"
+            className="w-52 md:w-96 animate-ping"
+            src="/necos/neco.png"
             alt="Neco"
           />
           <div className="min-w-xs max-w-full sm:min-w-xl sm:max-w-xl  md:min-w-3xl md:max-w-3xl ">

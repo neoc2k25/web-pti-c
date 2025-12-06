@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import WelcomePage from "./pages/WelcomePage";
 import TimPage from "./pages/TimPage";
+import TimById from "./pages/TimById";
 
 const Routes = createBrowserRouter([
   {
@@ -11,7 +12,10 @@ const Routes = createBrowserRouter([
     path: "/tim",
     element: <TimPage />,
   },
-  
+  {
+    path: "/tim/:id",
+    element: <TimById />,
+  },
 ]);
 
 export default Routes;
