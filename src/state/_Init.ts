@@ -9,7 +9,7 @@ export const useCurrentSayHello = create(
         set({ isSayHello: data });
       },
     }),
-    { name: "_CurrentSayHello " }
+    { name: "_CurrentSayHalo" }
   )
 );
 /** Get a current name */
@@ -21,11 +21,11 @@ export const useCurrentName = create(
         set({ name: data });
       },
     }),
-    { name: "_CurrentName" }
+    { name: "_CurrentNama" }
   )
 );
 /** Get a current step (tim page) */
-export const useForced = create(
+export const useForcedTim = create(
   persist(
     (set) => ({
       step: 1,
@@ -33,6 +33,20 @@ export const useForced = create(
         set({ step: data });
       },
     }),
-    { name: "_CurrentStepTim" }
+    { name: "_CurrentStepTeam" }
   )
 );
+/** Get a current step (tim page by id) */
+export const useForcedTimById = (id: number) =>
+  create(
+    persist(
+      (set) => ({
+        step: { id, no: 1 },
+        setStep: ({ id, no }: { id: number; no: number }) =>
+          set({ step: { id, no } }),
+      }),
+      {
+        name: `_CurrentStepTim_${id}`,
+      }
+    )
+  );

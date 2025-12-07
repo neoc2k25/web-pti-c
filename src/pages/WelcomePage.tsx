@@ -1,9 +1,8 @@
 import { useEffect, useRef } from "react";
 import SayHello from "../component/SayHello";
-import Snow from "../component/Snow";
 import Typed from "typed.js";
 import { useCurrentName, useCurrentSayHello } from "../state/_Init";
-import Navbar from "../layouts/Navbar";
+import MainLayout from "../layouts/MainLayout";
 
 const WelcomePage = () => {
   /** cache is say hello */
@@ -34,31 +33,33 @@ const WelcomePage = () => {
     };
   }, [isSayHelloVisible, name]);
   return (
-    <div className="w-full h-screen grid place-content-center bg-cover bg-center bg-no-repeat object-cover z-50 p-4 ">
-      <Navbar />
-      <Snow />
-      <div
-        className={`${
-          isSayHelloVisible ? "hidden" : "w-full flex justify-center"
-        }`}
-      >
-        <div className="w-full flex flex-col md:flex-row justify-evenly items-center ">
-          <img
-            id="necoImage"
-            className="w-52 md:w-96 animate-ping"
-            src="/necos/neco.png"
-            alt="Neco"
-          />
-          <div className="min-w-xs max-w-full sm:min-w-xl sm:max-w-xl  md:min-w-3xl md:max-w-3xl ">
-            <span
-              ref={helloRef}
-              className="text-center md:text-left text-white text-xs md:text-sm block"
-            ></span>
+    <MainLayout>
+      <div className="w-full grid place-content-center bg-cover bg-center bg-no-repeat object-cover z-50 p-4">
+        <div
+          className={`${
+            isSayHelloVisible ? "hidden" : "w-full flex justify-center"
+          }`}
+        >
+          <div className="w-full flex flex-col md:flex-row justify-evenly items-center ">
+            <img
+              id="necoImage"
+              className="w-52 md:w-96 animate-ping"
+              src="/necos/neco.png"
+              alt="Neco"
+            />
+            <div className="min-w-xs max-w-full sm:min-w-xl sm:max-w-xl  md:min-w-3xl md:max-w-3xl">
+              <span
+                ref={helloRef}
+                className="text-center md:text-left text-white text-xs md:text-sm block"
+              ></span>
+            </div>
           </div>
         </div>
+        <div className="w-full grid place-content-center">
+          {isSayHelloVisible && <SayHello />}
+        </div>
       </div>
-      {isSayHelloVisible && <SayHello />}
-    </div>
+    </MainLayout>
   );
 };
 

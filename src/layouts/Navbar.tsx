@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
-import { useCurrentName } from "../state/_Init";
+import { useCurrentSayHello } from "../state/_Init";
 
 const Navbar = () => {
   /** cache current name */
-  const name = useCurrentName((s: any) => s.name);
+  /** cache is say hello */
+  const isSayHelloVisible = useCurrentSayHello((s: any) => s.isSayHello);
   return (
     <nav
       className={`${
-        !name && "hidden"
-      } bg-neutral-primary fixed w-full z-40 top-0 start-0 border-b border-[#00eaff] rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0  text-white`}
+        isSayHelloVisible && "hidden"
+      } bg-neutral-primary fixed w-full z-60 top-0 start-0 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0  text-white`}
     >
       {/* max-w-xl */}
       <div className="w-full flex flex-wrap items-center justify-between mx-auto p-4 ">
@@ -18,7 +19,7 @@ const Navbar = () => {
         >
           <img
             src="/logo-removebg-preview.png"
-            className="w-12"
+            className="w-10"
             alt="Flowbite Logo"
           />
           {/* <span className="self-center text-xl text-heading font-semibold whitespace-nowrap">
