@@ -77,6 +77,30 @@ const Navbar = () => {
                 Tim
               </Link>
             </li>
+            <li>
+              <Link
+                to={`/positron`}
+                className={`py-2 text-white text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent transition-all duration-300 text-outline`}
+              >
+                Positron
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={`/album`}
+                className={`py-2 text-white text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent transition-all duration-300 text-outline`}
+              >
+                Album
+              </Link>
+            </li>
+            <li>
+              <Link
+                to={`/kontak`}
+                className={`py-2 text-white text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent transition-all duration-300 text-outline`}
+              >
+                Kontak
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

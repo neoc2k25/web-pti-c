@@ -182,19 +182,19 @@ const TimById = () => {
               <div className=" mt-8">
                 <p>Yuk , Kunjungi Sosial Media Saya</p>
                 <div className="flex gap-4 mt-2">
-                  <a href="">
+                  <a href={`${data?.links?.ig}`}>
                     <Instagram height={32} width={32} />
                   </a>
-                  <a href="">
+                  <a href={`${data?.links?.tiktok}`}>
                     <Tiktok height="32" width="32" fill="#fff" />
                   </a>
-                  <a href="">
+                  <a href={`${data?.links?.thread}`}>
                     <Thread height={32} width={32} fill="white" />
                   </a>
-                  <a href="">
+                  <a href={`${data?.links?.spotify}`}>
                     <Spotify height={32} width={32} />
                   </a>
-                  <a href="">
+                  <a href={`${data?.links?.github}`}>
                     <Github height={32} width={32} />
                   </a>
                 </div>
