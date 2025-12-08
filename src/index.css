@@ -125,19 +125,18 @@
   }
 }
 
-.animate-left-to-mid {
-  animation: leftToMid 5s;
+.animate-opacity {
+  animation: OpacityAnimation 5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-@keyframes leftToMid {
+@keyframes OpacityAnimation {
   0% {
-    left: -100%;
+    opacity: 0;
   }
   100% {
-    left: 50%;
-    transform: translateX(-50%);
+    opacity: 1;
   }
 }
 @keyframes leftToLeft {

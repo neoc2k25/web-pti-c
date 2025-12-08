@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Quest from "../component/Quest";
 import Btn from "../Element/Btn";
+import { moveButton } from "../utils/moveBtn";
 
 const TimPage = () => {
   /** handle caching current step user */
@@ -19,12 +20,8 @@ const TimPage = () => {
   /** eits tidak kena.... */
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
-  const moveButton = () => {
-    const randomX = Math.random() * 200 - 160; // -160 → 160 px
-    const randomY = Math.random() * 200 - 160;
-
-    setPos({ x: randomX, y: randomY });
-  };
+  /** on complete string in typed */
+  const [typedComplete, setTypedComplete] = useState<string | null>("");
 
   /**handle do not scroll if step is 1 or 2 */
   useEffect(() => {
@@ -58,13 +55,17 @@ const TimPage = () => {
       backDelay: 1000,
       typeSpeed: 50,
       showCursor: false,
+      onComplete(self: any) {
+        /** get message styep by step */
+        setTypedComplete(self?.strings[0]);
+      },
     });
 
     return () => {
       // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
-  }, [forcedRef.current, message]);
+  }, [message]);
 
   // const [fotoId, setFotoId] = useState<TypeTimMap | null>(null);
 
@@ -81,7 +82,13 @@ const TimPage = () => {
             ref={forcedRef}
             className="text-xs md:text-base block max-w-full min-h-20 md:min-h-16"
           ></span>
-          <div className="w-full min-h-32 relative z-10">
+          <div
+            className={`${
+              typedComplete === message
+                ? "visible opacity-100"
+                : "invisible opacity-0"
+            } transition-all duration-500 w-full min-h-32 relative z-10`}
+          >
             <Btn
               onClick={() => setStep(2)}
               className="absolute bottom-0 left-0"
@@ -93,13 +100,13 @@ const TimPage = () => {
                 transform: `translate(${pos.x}px, ${pos.y}px)`,
                 transition: "0.2s ease",
               }}
-              onClick={moveButton}
+              onClick={() => moveButton(setPos)}
               className="absolute bottom-0 right-0"
             >
               Tidak
             </Btn>
           </div>
-          <div className="w-full flex justify-center animate-left-to-mid relative">
+          <div className="w-full flex justify-center animate-opacity relative">
             <img src="/necos/neco-melas.png" className="w-24 sm:w-32" alt="" />
             <img src="/necos/neco-qna.png" className="w-44" alt="" />
           </div>
@@ -114,10 +121,15 @@ const TimPage = () => {
           <div className="w-full flex justify-between items-center">
             <img
               src="/necos/neco-resek.png"
-              className="relative w-24 sm:w-32 animate-left-to-left"
+              className="relative w-24 sm:w-32 animate-opacity"
               alt=""
             />
             <Btn
+              className={`${
+                typedComplete === message
+                  ? "visible opacity-100"
+                  : "invisible opacity-0"
+              } transition-all duration-500`}
               onClick={() => setStep(3)}
             >
               Lanjut

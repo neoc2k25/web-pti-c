@@ -33,7 +33,7 @@ export const useForcedTim = create(
         set({ step: data });
       },
     }),
-    { name: "_CurrentStepTeam" }
+    { name: "_CurrentStepTea" }
   )
 );
 /** Get a current step (tim page by id) */
@@ -50,3 +50,17 @@ export const useForcedTimById = (id: number) =>
       }
     )
   );
+/** Get a current step (positron) */
+export const useForcedPositron = create(
+  persist(
+    (set) => ({
+      step: 1,
+      setStep: (data: number) => {
+        set({ step: data });
+      },
+    }),
+    {
+      name: `_CurrentStepPositro`,
+    }
+  )
+);

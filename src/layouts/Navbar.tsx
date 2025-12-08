@@ -1,18 +1,11 @@
 import { Link } from "react-router-dom";
-import { useCurrentSayHello } from "../state/_Init";
 import { useState } from "react";
 
 const Navbar = () => {
-  /** cache current name */
-  /** cache is say hello */
-  const isSayHelloVisible = useCurrentSayHello((s: any) => s.isSayHello);
-
   const [openNav, setOpenNav] = useState(false);
   return (
     <nav
-      className={`${
-        isSayHelloVisible && "hidden"
-      } bg-neutral-primary fixed w-full z-60 top-0 start-0 backdrop-filter backdrop-blur-sm bg-opacity-10 `}
+      className={`bg-neutral-primary fixed w-full z-60 top-0 start-0 backdrop-filter backdrop-blur-sm bg-opacity-10 `}
     >
       <div className="max-w-7xl flex flex-wrap md:flex-nowrap items-center justify-between mx-auto p-4 ">
         <a className="flex items-center space-x-3 rtl:space-x-reverse">

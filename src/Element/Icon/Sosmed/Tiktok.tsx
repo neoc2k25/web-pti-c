@@ -5,9 +5,9 @@ const Tiktok = ({ fill, ...props }: any) => {
         <g
           fill="none"
           stroke="#fff"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
         >
           <path
             fill={fill}
@@ -16,9 +16,9 @@ const Tiktok = ({ fill, ...props }: any) => {
           />
           <path
             stroke="#000"
-            stroke-dasharray="36"
-            stroke-dashoffset="72"
-            stroke-width="4"
+            strokeDasharray="36"
+            strokeDashoffset="72"
+            strokeWidth="4"
             d="M11 11h-1c-2.21 0 -4.5 1.79 -4.5 4c0 2.21 1.5 4.5 4.5 4.5c2.21 0 4 -2.29 4 -4.5v-12.5"
           >
             <animate
@@ -30,9 +30,9 @@ const Tiktok = ({ fill, ...props }: any) => {
           </path>
           <path
             stroke="#000"
-            stroke-dasharray="10"
-            stroke-dashoffset="20"
-            stroke-width="4"
+            strokeDasharray="10"
+            strokeDashoffset="20"
+            strokeWidth="4"
             d="M18 2.5v8"
           >
             <animate
