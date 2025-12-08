@@ -68,7 +68,7 @@ const TimById = () => {
   } else if (step.no === 3) {
     message = `Sebelumnya, apakah kamu mau menjadi teman dari ${data?.nama}...🤗?`;
   } else if (step.no === 4) {
-    message = `Terima kasih atas konfirmasi nya..😍\n Kalian suah resmi berteman🤝`;
+    message = `Terima kasih atas konfirmasi nya..😍\n Kalian resmi berteman🤝`;
   } else if (step.no === 5) {
     message = `Yuk, kita mengenal lebih jauh tentang teman baru kita,(${data?.nama} )...🎊🎉`;
   } else {
@@ -126,7 +126,7 @@ const TimById = () => {
             <Btn
               onClick={() => setStep({ id: id, no: 2 })}
               className={`${
-                typedComplete === message
+                typedComplete !== ""
                   ? "visible opacity-100"
                   : "invisible opacity-0"
               } transition-all duration-500 my-4`}
@@ -148,7 +148,7 @@ const TimById = () => {
             />
             <Btn
               className={`${
-                typedComplete === message
+                typedComplete !== ""
                   ? "visible opacity-100"
                   : "invisible opacity-0"
               } transition-all duration-500 my-4`}
@@ -168,7 +168,7 @@ const TimById = () => {
               <Btn
                 onClick={() => setStep({ id: id, no: 4 })}
                 className={`absolute bottom-0 left-0 ${
-                  typedComplete === message
+                  typedComplete !== ""
                     ? "visible opacity-100"
                     : "invisible opacity-0"
                 } transition-all duration-500 my-4`}
@@ -182,7 +182,7 @@ const TimById = () => {
                 }}
                 onClick={() => moveButton(setPos)}
                 className={`absolute bottom-0 right-0 ${
-                  typedComplete === message
+                  typedComplete !== ""
                     ? "visible opacity-100"
                     : "invisible opacity-0"
                 } transition-all duration-500 my-4`}
@@ -222,7 +222,7 @@ const TimById = () => {
             </div>
             <Btn
               className={` ${
-                typedComplete === message
+                typedComplete !== ""
                   ? "visible opacity-100"
                   : "invisible opacity-0"
               } transition-all duration-500 my-4`}
@@ -245,7 +245,7 @@ const TimById = () => {
             />
             <Btn
               className={` ${
-                typedComplete === message
+                typedComplete !== ""
                   ? "visible opacity-100"
                   : "invisible opacity-0"
               } transition-all duration-500 my-4`}
