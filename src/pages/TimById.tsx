@@ -38,7 +38,7 @@ const TimById = () => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
   /** on complete string in typed */
-  const [typedComplete, setTypedComplete] = useState<string | null>("");
+  const [typedComplete, setTypedComplete] = useState<number>(0);
 
   /**handle do not scroll if step is 1 or 2 */
   useEffect(() => {
@@ -60,9 +60,7 @@ const TimById = () => {
   }, [step.no]);
 
   if (step.no === 1) {
-    message = `Haloo ${name},  perkenalkan dia ${
-      data?.nama
-    }👋, ${data?.kataPengantar.pertama}`;
+    message = `Haloo ${name},  perkenalkan dia ${data?.nama}👋, ${data?.kataPengantar.pertama}`;
   } else if (step.no === 2) {
     message = `${data?.kataPengantar?.kedua}`;
   } else if (step.no === 3) {
@@ -84,9 +82,9 @@ const TimById = () => {
       backDelay: 1000,
       typeSpeed: 50,
       showCursor: false,
-      onComplete(self: any) {
+      onStringTyped() {
         /** get message styep by step */
-        setTypedComplete(self?.strings[0]);
+        setTypedComplete(1);
       },
     });
 
@@ -99,7 +97,6 @@ const TimById = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
 
   return (
     <MainLayout>
@@ -124,9 +121,11 @@ const TimById = () => {
               />
             </div>
             <Btn
-              onClick={() => setStep({ id: id, no: 2 })}
+              onClick={() => {
+                setStep({ id: id, no: 2 }), setTypedComplete(0);
+              }}
               className={`${
-                typedComplete !== ""
+                typedComplete === 1
                   ? "visible opacity-100"
                   : "invisible opacity-0"
               } transition-all duration-500 my-4`}
@@ -148,11 +147,13 @@ const TimById = () => {
             />
             <Btn
               className={`${
-                typedComplete !== ""
+                typedComplete === 1
                   ? "visible opacity-100"
                   : "invisible opacity-0"
               } transition-all duration-500 my-4`}
-              onClick={() => setStep({ id: id, no: 3 })}
+              onClick={() => {
+                setStep({ id: id, no: 3 }), setTypedComplete(0);
+              }}
             >
               Lanjut
             </Btn>
@@ -166,9 +167,11 @@ const TimById = () => {
             ></span>
             <div className="w-full min-h-32 relative z-10">
               <Btn
-                onClick={() => setStep({ id: id, no: 4 })}
+                onClick={() => {
+                  setStep({ id: id, no: 4 }), setTypedComplete(0);
+                }}
                 className={`absolute bottom-0 left-0 ${
-                  typedComplete !== ""
+                  typedComplete === 1
                     ? "visible opacity-100"
                     : "invisible opacity-0"
                 } transition-all duration-500 my-4`}
@@ -182,7 +185,7 @@ const TimById = () => {
                 }}
                 onClick={() => moveButton(setPos)}
                 className={`absolute bottom-0 right-0 ${
-                  typedComplete !== ""
+                  typedComplete === 1
                     ? "visible opacity-100"
                     : "invisible opacity-0"
                 } transition-all duration-500 my-4`}
@@ -222,11 +225,13 @@ const TimById = () => {
             </div>
             <Btn
               className={` ${
-                typedComplete !== ""
+                typedComplete === 1
                   ? "visible opacity-100"
                   : "invisible opacity-0"
               } transition-all duration-500 my-4`}
-              onClick={() => setStep({ id: id, no: 5 })}
+              onClick={() => {
+                setStep({ id: id, no: 5 }), setTypedComplete(0);
+              }}
             >
               Lanjut
             </Btn>
@@ -245,11 +250,13 @@ const TimById = () => {
             />
             <Btn
               className={` ${
-                typedComplete !== ""
+                typedComplete === 1
                   ? "visible opacity-100"
                   : "invisible opacity-0"
               } transition-all duration-500 my-4`}
-              onClick={() => setStep({ id: id, no: 6 })}
+              onClick={() => {
+                setStep({ id: id, no: 6 }), setTypedComplete(0);
+              }}
             >
               Lanjut
             </Btn>

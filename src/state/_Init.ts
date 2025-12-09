@@ -46,7 +46,7 @@ export const useForcedTimById = (id: number) =>
           set({ step: { id, no } }),
       }),
       {
-        name: `_CurrentStepTim_${id}`,
+        name: `_CurrentStepTi_${id}`,
       }
     )
   );
