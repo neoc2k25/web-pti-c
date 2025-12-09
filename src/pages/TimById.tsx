@@ -102,7 +102,6 @@ const TimById = () => {
 
   return (
     <MainLayout>
-      <div className="fixed inset-0 opacity-10"></div>
       <div className="p-4">
         {step.no === 1 && (
           <Quest>

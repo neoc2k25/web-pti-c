@@ -11,7 +11,7 @@ const PositronPage = () => {
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
   /** on complete string in typed */
-  const [typedComplete, setTypedComplete] = useState<string | null>("");
+  const [typedComplete, setTypedComplete] = useState<number>(0);
 
   /** handle caching current step user */
   const step = useForcedPositron((s: any) => s.step);
@@ -21,13 +21,12 @@ const PositronPage = () => {
   let message = "";
 
   if (step === 1) {
-    message = "Apakah kamu siap untuk memulai semuanya? ";
+    message = "Apakah kamu siap untuk memulai semuanya 🙌🀄? ";
   } else if (step === 2) {
     message =
       "POSITRON adalah Program orientasi bagi mahasiswa baru Teknik Elektro dan Informatika untuk mengenal lingkungan kampus, membangun kekompakan dan kekeluargaan, serta membentuk civitas akademika yang berkarakter dan berbudi pekerti baik...🤨📝💡";
   } else if (step === 3) {
-    message =
-      "Yuk, ikuti cerita neo-c di Positron-2025...🥳🎈✨.";
+    message = "Yuk, ikuti cerita neo-c di Positron-2025...🥳🎈✨.";
   } else {
     message = "";
   }
@@ -43,9 +42,9 @@ const PositronPage = () => {
       backDelay: 1000,
       typeSpeed: 50,
       showCursor: false,
-      onComplete(self: any) {
+      onStringTyped() {
         /** get message styep by step */
-        setTypedComplete(self?.strings[0]);
+        setTypedComplete(1);
       },
     });
 
@@ -53,7 +52,7 @@ const PositronPage = () => {
       // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
-  }, [message]);
+  }, [step]);
   return (
     <MainLayout>
       <div className="pt-4">
@@ -65,13 +64,15 @@ const PositronPage = () => {
             ></span>
             <div
               className={`${
-                typedComplete === message
+                typedComplete === 1
                   ? "visible opacity-100"
                   : "invisible opacity-0"
               } transition-all duration-500 w-full min-h-32 relative z-10`}
             >
               <Btn
-                onClick={() => setStep(2)}
+                onClick={() => {
+                  setStep(2), setTypedComplete(0);
+                }}
                 className="absolute bottom-0 left-0"
               >
                 Iya
@@ -112,10 +113,10 @@ const PositronPage = () => {
               />
               <Btn
                 onClick={() => {
-                  setStep(3);
+                  setStep(3), setTypedComplete(0);
                 }}
                 className={`${
-                  typedComplete === message
+                  typedComplete === 1
                     ? "visible opacity-100"
                     : "invisible opacity-0"
                 } transition-all duration-500 my-4`}
@@ -133,17 +134,13 @@ const PositronPage = () => {
             ></span>
 
             <div className="w-full flex justify-center items-center animate-opacity relative">
-              <img
-                src="/necos/neco.png"
-                className="w-24 sm:w-32"
-                alt=""
-              />
+              <img src="/necos/neco.png" className="w-32" alt="" />
               <Btn
                 onClick={() => {
-                  setStep(3);
+                  setStep(4), setTypedComplete(0);
                 }}
                 className={`${
-                  typedComplete === message
+                  typedComplete === 1
                     ? "visible opacity-100"
                     : "invisible opacity-0"
                 } transition-all duration-500 my-4`}
@@ -156,12 +153,63 @@ const PositronPage = () => {
         <div
           className={`${step === 1 && "blur-4xl"} ${step === 2 && "blur-3xl"} ${
             step === 3 && "blur-2xl"
-          } ${
-            step === 4 && "blur-none"
-          } flex flex-wrap justify-center gap-y-2 pt-4`}
+          } ${step === 4 && "blur-none"} flex justify-center text-white`}
         >
           <span ref={step === 4 ? forcedRef : undefined}></span>
-          <p className="text-white text-center">Tahap Pengembangan...</p>
+          <div className="pl-4 pr-1 pt-3 max-w-sm md:max-w-3xl ">
+            <p className="">Forum Maba</p>
+            <p className="text-xs">
+              Forum Mahasiswa Baru (Forum Maba) merupakan kegiatan dalam rangka
+              menyambut mahasiswa baru. Melalui Forum Maba, mahasiswa baru
+              diajak memahami identitasnya sebagai bagian dari civitas
+              akademika.
+            </p>
+            <p className="pt-4">tahap pengembangan....</p>
+            <div className="max-w-sm md:max-w-3xl md:gap-4 shadow-xs text-white p-1 flex flex-col flex-wrap justify-evenly z-40">
+              <img
+                loading="lazy"
+                src="/positron/forum_maba.jpg"
+                className="rounded-t-base max-w-xs transition-all duration-500 bg-no-repeat rounded-xl md:rounded-3xl shadow-[0_0_12px_#00eaff]"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/positron/forum_maba_2.jpg"
+                className="rounded-t-base max-w-xs transition-all duration-500 bg-no-repeat rounded-xl md:rounded-3xl shadow-[0_0_12px_#00eaff]"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/positron/arus_1.jpg"
+                className="rounded-t-base max-w-xs transition-all duration-500 bg-no-repeat rounded-xl md:rounded-3xl shadow-[0_0_12px_#00eaff]"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/positron/ioh.jpg"
+                className="rounded-t-base max-w-xs transition-all duration-500 bg-no-repeat rounded-xl md:rounded-3xl shadow-[0_0_12px_#00eaff]"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/positron/arus_2.jpg"
+                className="rounded-t-base max-w-xs transition-all duration-500 bg-no-repeat rounded-xl md:rounded-3xl shadow-[0_0_12px_#00eaff]"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/positron/disiplin.jpg"
+                className="rounded-t-base max-w-xs transition-all duration-500 bg-no-repeat rounded-xl md:rounded-3xl shadow-[0_0_12px_#00eaff]"
+                alt=""
+              />
+              <img
+                loading="lazy"
+                src="/positron/nako.jpg"
+                className="rounded-t-base max-w-xs transition-all duration-500 bg-no-repeat rounded-xl md:rounded-3xl shadow-[0_0_12px_#00eaff]"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </MainLayout>
