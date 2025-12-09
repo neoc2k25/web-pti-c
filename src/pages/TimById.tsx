@@ -60,7 +60,9 @@ const TimById = () => {
   }, [step.no]);
 
   if (step.no === 1) {
-    message = `Haloo ${name},  perkenalkan dia ${data?.nama}👋, ${data?.kataPengantar.pertama}`;
+    message = `Haloo ${name ? name : "Guest"},  perkenalkan dia ${
+      data?.nama
+    }👋, ${data?.kataPengantar.pertama}`;
   } else if (step.no === 2) {
     message = `${data?.kataPengantar?.kedua}`;
   } else if (step.no === 3) {

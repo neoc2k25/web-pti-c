@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import MainLayout from "../layouts/MainLayout";
 import Typed from "typed.js";
-import { useForcedPositron} from "../state/_Init";
+import { useForcedPositron } from "../state/_Init";
 import Quest from "../component/Quest";
 import Btn from "../Element/Btn";
 import { moveButton } from "../utils/moveBtn";
@@ -21,8 +21,14 @@ const PositronPage = () => {
   let message = "";
 
   if (step === 1) {
-    message = "Apakah kamu siap?";
+    message = "Apakah kamu siap untuk memulai semuanya? ";
   } else if (step === 2) {
+    message =
+      "POSITRON adalah Program orientasi bagi mahasiswa baru Teknik Elektro dan Informatika untuk mengenal lingkungan kampus, membangun kekompakan dan kekeluargaan, serta membentuk civitas akademika yang berkarakter dan berbudi pekerti baik...🤨📝💡";
+  } else if (step === 3) {
+    message =
+      "Yuk, ikuti cerita neo-c di Positron-2025...🥳🎈✨.";
+  } else {
     message = "";
   }
 
@@ -91,10 +97,70 @@ const PositronPage = () => {
             </div>
           </Quest>
         )}
+        {step === 2 && (
+          <Quest>
+            <span
+              ref={forcedRef}
+              className="text-xs md:text-base block max-w-full min-h-20 md:min-h-16"
+            ></span>
+
+            <div className="w-full flex justify-center items-center animate-opacity relative">
+              <img
+                src="/necos/neco bawa_hadiah.png"
+                className="w-24 sm:w-32"
+                alt=""
+              />
+              <Btn
+                onClick={() => {
+                  setStep(3);
+                }}
+                className={`${
+                  typedComplete === message
+                    ? "visible opacity-100"
+                    : "invisible opacity-0"
+                } transition-all duration-500 my-4`}
+              >
+                Lanjut
+              </Btn>
+            </div>
+          </Quest>
+        )}
+        {step === 3 && (
+          <Quest>
+            <span
+              ref={forcedRef}
+              className="text-xs md:text-base block max-w-full min-h-20 md:min-h-16"
+            ></span>
+
+            <div className="w-full flex justify-center items-center animate-opacity relative">
+              <img
+                src="/necos/neco.png"
+                className="w-24 sm:w-32"
+                alt=""
+              />
+              <Btn
+                onClick={() => {
+                  setStep(3);
+                }}
+                className={`${
+                  typedComplete === message
+                    ? "visible opacity-100"
+                    : "invisible opacity-0"
+                } transition-all duration-500 my-4`}
+              >
+                Lanjut
+              </Btn>
+            </div>
+          </Quest>
+        )}
         <div
-          className={`${step === 1 && "blur-2xl"} ${step === 2 && "blur-none"} flex flex-wrap justify-center gap-y-2 pt-4`}
+          className={`${step === 1 && "blur-4xl"} ${step === 2 && "blur-3xl"} ${
+            step === 3 && "blur-2xl"
+          } ${
+            step === 4 && "blur-none"
+          } flex flex-wrap justify-center gap-y-2 pt-4`}
         >
-          <span ref={step === 2 ? forcedRef : undefined}></span>
+          <span ref={step === 4 ? forcedRef : undefined}></span>
           <p className="text-white text-center">Tahap Pengembangan...</p>
         </div>
       </div>
