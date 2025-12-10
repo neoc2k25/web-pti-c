@@ -8,6 +8,7 @@ import MainLayout from "../layouts/MainLayout";
 import Quest from "../component/Quest";
 import Btn from "../Element/Btn";
 import { moveButton } from "../utils/moveBtn";
+import TypedText from "../utils/Typed";
 
 const TimPage = () => {
   /** handle caching current step user */
@@ -23,7 +24,7 @@ const TimPage = () => {
   /** on complete string in typed */
   const [typedComplete, setTypedComplete] = useState<string | null>("");
 
-  /**handle do not scroll if step is 1 or 2 */
+  /**handle do not scroll */
   useEffect(() => {
     if (step === 1) {
       document.body.style.overflow = "hidden";
@@ -78,10 +79,7 @@ const TimPage = () => {
     <MainLayout>
       {step === 1 && (
         <Quest>
-          <span
-            ref={forcedRef}
-            className="text-xs md:text-base block max-w-full min-h-20 md:min-h-16"
-          ></span>
+          <TypedText ref={forcedRef}></TypedText>
           <div
             className={`${
               typedComplete === message
@@ -114,10 +112,7 @@ const TimPage = () => {
       )}
       {step === 2 && (
         <Quest>
-          <span
-            ref={forcedRef}
-            className="text-base block max-w-full min-h-20 md:min-h-16"
-          ></span>
+          <TypedText ref={forcedRef}></TypedText>
           <div className="w-full flex justify-between items-center">
             <img
               src="/necos/neco-resek.png"

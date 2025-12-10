@@ -1,10 +1,26 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
+
+  const navRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const handleClickOutiside = (e: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(e.target as Node)) {
+        setOpenNav(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutiside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutiside);
+    };
+  }, [openNav]);
+
   return (
     <nav
+      ref={navRef}
       className={`bg-neutral-primary fixed w-full z-60 top-0 start-0 backdrop-filter backdrop-blur-sm bg-opacity-10 `}
     >
       <div className="max-w-7xl flex flex-wrap md:flex-nowrap items-center justify-between mx-auto p-4 ">
@@ -24,7 +40,7 @@ const Navbar = () => {
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary text-white border border-white"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary text-[#00eaff] border border-[#00eaff]"
           aria-controls="navbar-default"
           aria-expanded="false"
           onClick={() => setOpenNav(!openNav)}

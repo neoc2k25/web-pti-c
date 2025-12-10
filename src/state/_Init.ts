@@ -60,7 +60,7 @@ export const useForcedPositron = create(
       },
     }),
     {
-      name: `_CurrentStepPositrons`,
+      name: `_CurrentStepPositro`,
     }
   )
 );

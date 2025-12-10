@@ -14,6 +14,7 @@ import Thread from "../Element/Icon/Sosmed/Thread";
 import Spotify from "../Element/Icon/Sosmed/Spotify";
 import Play from "../Element/Icon/Play";
 import { moveButton } from "../utils/moveBtn";
+import TypedText from "../utils/Typed";
 const TimById = () => {
   /** id member */
   const { id } = useParams();
@@ -105,10 +106,7 @@ const TimById = () => {
       <div className="p-4">
         {step.no === 1 && (
           <Quest>
-            <span
-              ref={forcedRef}
-              className="text-xs md:text-base block max-w-full min-h-20 md:min-h-16"
-            ></span>
+            <TypedText ref={forcedRef}></TypedText>
             <div className="w-full flex justify-center gap-2  relative animate-opacity my-4">
               <img
                 src={`${data?.foto1}`}
@@ -137,10 +135,7 @@ const TimById = () => {
         )}
         {step.no === 2 && (
           <Quest>
-            <span
-              ref={forcedRef}
-              className="text-xs md:text-base block max-w-full min-h-20 md:min-h-16"
-            ></span>
+            <TypedText ref={forcedRef}></TypedText>
             <img
               src="/necos/neco-senyum_dan_bertanya.png"
               className="w-32 relative left-1/2 -translate-x-1/2 animate-opacity my-4"
@@ -240,10 +235,7 @@ const TimById = () => {
         )}
         {step.no === 5 && (
           <Quest>
-            <span
-              ref={forcedRef}
-              className="text-xs md:text-base block max-w-full min-h-20 md:min-h-16"
-            ></span>
+            <TypedText ref={forcedRef}></TypedText>
             <img
               src="/necos/neco-gembira.png"
               className="w-32 relative left-1/2 -translate-x-1/2 animate-opacity my-4"
