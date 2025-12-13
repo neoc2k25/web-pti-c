@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "url": "galeries/kopi-offr-1.webp",
+      "title": "Kopi Offering 1"
+    },
+    {
+      "id": 2,
+      "url": "galeries/kopi-offr-2.webp",
+      "title": "Kopi Offering 2"
+    },
+    {
+      "id": 3,
+      "url": "galeries/nako.webp",
+      "title": "Nako"
+    },
+    {
+      "id": 4,
+      "url": "galeries/skakmat-2.jpg",
+      "title": "Skakmat"
+    },
+    {
+      "id": 5,
+      "url": "galeries/skakmat.jpg",
+      "title": "Skakmat"
+    },
+    {
+      "id": 6,
+      "url": "galeries/ta_dpk.jpg",
+      "title": "Tugas Akhir Dpk"
+    },
+    {
+      "id": 7,
+      "url": "galeries/ta.jpg",
+      "title": "Tugas Akhir Dpk"
+    },
+    {
+      "id": 8,
+      "url": "galeries/tet-2.jpg",
+      "title": "Teknik Extra Time"
+    },
+    {
+      "id": 9,
+      "url": "galeries/tet.jpg",
+      "title": "Teknik Extra Time"
+    },
+    {
+      "id": 10,
+      "url": "galeries/tugas-bing.jpg",
+      "title": "Tugas Akhir B.Ing"
+    },
+    {
+      "id": 11,
+      "url": "galeries/wym.jpg",
+      "title": "What Your Mind"
+    },
+    {
+      "id": 12,
+      "url": "galeries/wym-2.jpg",
+      "title": "What Your Mind"
+    }
+  ]
+}

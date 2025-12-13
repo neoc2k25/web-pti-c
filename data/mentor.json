@@ -3,8 +3,8 @@
     {
       "id": 1,
       "nama": "Nama mentor 1",
-      "foto1": "/necos/neco.png",
-      "foto2": "/necos/neco.png",
+      "foto1": "/necos/neco.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "belum diisi",
         "kedua": "belum diisi"
@@ -27,8 +27,8 @@
     {
       "id": 2,
       "nama": "Nama mentor 2",
-      "foto1": "/necos/neco.png",
-      "foto2": "/necos/neco.png",
+      "foto1": "/necos/neco.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "belum diisi",
         "kedua": "belum diisi"
@@ -51,8 +51,8 @@
     {
       "id": 3,
       "nama": "Nama mentor 3",
-      "foto1": "/necos/neco.png",
-      "foto2": "/necos/neco.png",
+      "foto1": "/necos/neco.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "belum diisi",
         "kedua": "belum diisi"
@@ -75,8 +75,8 @@
     {
       "id": 4,
       "nama": "Nama mentor 4",
-      "foto1": "/necos/neco.png",
-      "foto2": "/necos/neco.png",
+      "foto1": "/necos/neco.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "belum diisi",
         "kedua": "belum diisi"
@@ -99,8 +99,8 @@
     {
       "id": 5,
       "nama": "Nama mentor 5",
-      "foto1": "/necos/neco.png",
-      "foto2": "/necos/neco.png",
+      "foto1": "/necos/neco.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "belum diisi",
         "kedua": "belum diisi"

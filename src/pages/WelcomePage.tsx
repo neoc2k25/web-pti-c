@@ -48,7 +48,7 @@ const WelcomePage = () => {
               onClick={() => setIsSayHelloVisible(!isSayHelloVisible)}
               id="necoImage"
               className="w-52 md:w-96 animate-ping"
-              src="/necos/neco.png"
+              src="/necos/neco.webp"
               alt="Neco"
             />
             <div className="min-w-xs max-w-full sm:min-w-xl sm:max-w-xl  md:min-w-3xl md:max-w-3xl">

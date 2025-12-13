@@ -4,7 +4,7 @@
       "id": 1,
       "nama": "MUHAMMAD ZAKY ZHALIFUNNAS",
       "foto1": "/members/jaki.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia punya pemikiran yang kritis banget loh...🧐🔍 ",
         "kedua": "bahkan karna itu dia jadi dewan komunal waktu serangkaian positron 👑🗣️"
@@ -28,7 +28,7 @@
       "id": 2,
       "nama": "NABILAH NUR RAMADHANIA",
       "foto1": "/members/nabilah.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia tuh pendiam banget dikelas...🤐😶",
         "kedua": "tapi dia pecinta alam loh guys...🏔️🌾🍃"
@@ -52,7 +52,7 @@
       "id": 3,
       "nama": "NABILA NUR RIZKIYAH",
       "foto1": "/members/nabila.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia tuh dikenal sangat suka ngopi loh... ☕🤎☕︎ᝰᐟ",
         "kedua": "bahkan info ngopi di penjuru duniapun dia pasti datang...📱📰"
@@ -76,7 +76,7 @@
       "id": 4,
       "nama": "NADYA SHAFWAH AZAHRAH",
       "foto1": "/members/nadya.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia anaknya pinter loh di kelas 🧠✨",
         "kedua": "skill matematika dan english nya dia bagus banget 📊📈!"
@@ -100,7 +100,7 @@
       "id": 5,
       "nama": "NAJMA AMAMI PRIYANGGA",
       "foto1": "/members/najma.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia yang buat suasana kelas cair..💧🫠",
         "kedua": "bahkan yappingnya bisa ngalahin langit ke 7🤫"
@@ -124,7 +124,7 @@
       "id": 6,
       "nama": "NANDA MUHAMMAD RIFKI ARDIANSYAH",
       "foto1": "/members/nanda.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia itu anaknya humoris, suka buat orang lain ketawa🤓",
         "kedua": "tapi dia juga ustadz muda loh guys, masyaallah 🕌🤲"
@@ -148,7 +148,7 @@
       "id": 7,
       "nama": "NATA BAGUS IRAWAN",
       "foto1": "/members/nata.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia jago banget main musik loh... 🎸",
         "kedua": "karna waktu event skakmat dia manggung, fans dia jadi makin banyak🤩"
@@ -172,7 +172,7 @@
       "id": 8,
       "nama": "NOVA ARDIANTI",
       "foto1": "/members/nopa.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia anaknya kritis loh..🧠✨",
         "kedua": "bahkan suka ngasih pertanyaan ga masuk akal pas presentasi..👨‍💼🎤"
@@ -196,7 +196,7 @@
       "id": 9,
       "nama": "NUR 'AINI LATIVAH",
       "foto1": "/members/lativah.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia tuh suka buat jokes di manapun, kapanpun, si ceria 🤗✨",
         "kedua": "bahkan, semua orang bisa ketawa karna dia, katanya sih 'born to be cute'🧏🏻‍♀️"
@@ -219,8 +219,8 @@
     {
       "id": 10,
       "nama": "NUR HIDAYATULLAH SYAHPUTRA",
-      "foto1": "/members/putra.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/putra.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia tuh anaknya fun abis😆",
         "kedua": "humble juga ke temen-temennya🤗"
@@ -243,8 +243,8 @@
     {
       "id": 11,
       "nama": "NURUS SILMI KAFFAH",
-      "foto1": "/members/silmi.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/silmi.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia anaknya diem-diem pinter banget loh... 🤫",
         "kedua": "katanya dia tuh mau jadi mysterious girl🎭😷🧛‍♂️"
@@ -268,7 +268,7 @@
       "id": 12,
       "nama": "PAKSI ATHAR KRISTIYADY",
       "foto1": "/members/paksi.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "belum diisi",
         "kedua": "belum diisi"
@@ -292,7 +292,7 @@
       "id": 13,
       "nama": "QATRUNNADA AULIA BARID",
       "foto1": "/members/nada.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia orangnya penyabar banget loh... 🧘🏻‍♀️",
         "kedua": "tapi kalau udah laper, bad moodnya bisa sampe 7 hari 7 malam😤"
@@ -316,7 +316,7 @@
       "id": 14,
       "nama": "RACHMAD PRADANA WIBOWO",
       "foto1": "/members/dana.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "belum diisi",
         "kedua": "belum diisi"
@@ -340,7 +340,7 @@
       "id": 15,
       "nama": "RAFA FATIH SUBEKTI",
       "foto1": "/members/fatih.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia tuh dikenal gamer abiezz...🎮🕹️",
         "kedua": "kalau rank mu mau naik, minta tips and trick ke dia aja guys...🔥"
@@ -364,7 +364,7 @@
       "id": 16,
       "nama": "RAHAYU ILMI AMALIA",
       "foto1": "/members/el.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "belum diisi",
         "kedua": "belum diisi"
@@ -387,8 +387,8 @@
     {
       "id": 17,
       "nama": "RAIHAN GARIN DWI SAPUTRA",
-      "foto1": "/members/rehan.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/rehan.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia ketua kelas dari neo-c loh 👑",
         "kedua": "dia dikenal sangat humble loh ke semuanya 🤝✨"
@@ -412,7 +412,7 @@
       "id": 18,
       "nama": "RANGGA ADI YUDDIN",
       "foto1": "/members/rangga.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia tuh yappingnya nonstop loh...🗣️",
         "kedua": "kalau mau tidur tapi gak bisa, minta dia cerita deh, biar tidurmu lelap...😴"
@@ -436,7 +436,7 @@
       "id": 19,
       "nama": "RAPSULI GEMA NUSANTARA",
       "foto1": "/members/rap.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "belum diisi",
         "kedua": "belum diisi"
@@ -460,7 +460,7 @@
       "id": 20,
       "nama": "RATNA PARAMITA",
       "foto1": "/members/ratna.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "Tahukah kamu? Dia itu pandai menari, loh…💃🕺",
         "kedua": "ketika NAKO dia tuh tampil, dan semua temannya dibuat kagum ..🤩"
@@ -483,8 +483,8 @@
     {
       "id": 21,
       "nama": "RAYMOND ABHI PRAYA",
-      "foto1": "/members/remon.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/remon.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "belum diisi",
         "kedua": "belum diisi"
@@ -507,8 +507,8 @@
     {
       "id": 22,
       "nama": "RENO NALA PRATAMA",
-      "foto1": "/members/reno.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/reno.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia tuh suka banget olahraga dan mendaki..🏔️⚽",
         "kedua": "Soal futsal, UNO, sampai badminton… dia mah jagonya kebablasan ⚽🎴🏸⚡"
@@ -531,8 +531,8 @@
     {
       "id": 23,
       "nama": "REZA ARINA NAJIHA",
-      "foto1": "/members/rere.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/rere.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia diem banget dikelas...🤐😶",
         "kedua": "tapi kalau uda sefrekuensi, humornya...😭"
@@ -555,8 +555,8 @@
     {
       "id": 24,
       "nama": "RINALDI MULYA PUTRA",
-      "foto1": "/members/rinaldi.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/rinaldi.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia tuh anaknya suka banget tidur...😴💤",
         "kedua": "bahkan dia sering ketiduran, sampe ngga ikut matkul🤦🏻‍♂️"
@@ -579,8 +579,8 @@
     {
       "id": 25,
       "nama": "RYAN AL FAHREZI",
-      "foto1": "/members/rian.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/rian.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia tuh dikenal sangat setia loh guys...🤘",
         "kedua": "x-borg membuktikan kesetiaannya...🎮🕹️"
@@ -603,8 +603,8 @@
     {
       "id": 26,
       "nama": "SALMA PUTRI KISWORO",
-      "foto1": "/members/salma.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/salma.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia anaknya diem-diem pinter banget loh... 🤫",
         "kedua": "bahkan dia jadi juara 3 waktu lomba TIC 🏆"
@@ -627,8 +627,8 @@
     {
       "id": 27,
       "nama": "SEKAR ANINDITA DEWI",
-      "foto1": "/members/sekar.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/sekar.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "belum diisi",
         "kedua": "belum diisi"
@@ -651,8 +651,8 @@
     {
       "id": 28,
       "nama": "SINTYA DEVI NUR AINI",
-      "foto1": "/members/sintya.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/sintya.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia jago banget matematika loh... 🧮",
         "kedua": "di kelas aja dia jadi bendahara soalnya pinter ngatur keuangan 💸"
@@ -675,8 +675,8 @@
     {
       "id": 29,
       "nama": "SUCI AULIA",
-      "foto1": "/members/suci.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/suci.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia tuh dikenal sangat suka membaca novel loh... 📖",
         "kedua": "Bahkan sekarang dia sudah bisa menulis novel karyanya sendiri ✨📚"
@@ -699,8 +699,8 @@
     {
       "id": 30,
       "nama": "SURYANI MUKLAS SYAHPUTRI",
-      "foto1": "/members/suryani.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/suryani.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "belum diisi",
         "kedua": "belum diisi"
@@ -723,8 +723,8 @@
     {
       "id": 31,
       "nama": "THERESA NATHALIE DAVNY WOWILING",
-      "foto1": "/members/tesa.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/tesa.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia tuh dikenal sangat suka berorganisasi loh... 🤝",
         "kedua": "Bahkan, saat ini dia menjabat sebagai pengurus seven segment 🌟🔥"
@@ -747,8 +747,8 @@
     {
       "id": 32,
       "nama": "TIARA SYIFA SEPTIRA AZZAHRA",
-      "foto1": "/members/neco.png",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/neco.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "belum diisi",
         "kedua": "belum diisi"
@@ -772,7 +772,7 @@
       "id": 33,
       "nama": "USAM MUHAZIR",
       "foto1": "/members/hajir.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia dikenal sangat teknis loh guys...🛠️",
         "kedua": "bahkan kalau kamu bilang i love you, dia akan jawab Bloototh connection successfuly 💻✅"
@@ -795,8 +795,8 @@
     {
       "id": 34,
       "nama": "VALDIEN ACHMAD ALDHYMA",
-      "foto1": "/members/valdin.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/valdin.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "belum diisi",
         "kedua": "belum diisi"
@@ -820,7 +820,7 @@
       "id": 35,
       "nama": "WAILDAN ARASYADHA",
       "foto1": "/members/arsad.webp",
-      "foto2": "/necos/neco.png",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia tuh dikenal sangat hobi masak loh...🍳",
         "kedua": "Kalau perut mulai demo, langsung minta dia masakin deh… chef dadakan siap beraksi 👨‍🍳🍳"
@@ -843,8 +843,8 @@
     {
       "id": 36,
       "nama": "ZEVA AFINA FAZA SORAYA",
-      "foto1": "/members/zefa.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/zefa.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia tuh suka banget main game 🎮🕹️",
         "kedua": "bahkan roblox pun dia always on 24/7, dan dia rela keluar uang banyak untuk beli game💰🤑"
@@ -867,8 +867,8 @@
     {
       "id": 37,
       "nama": "ZUDA PRIMADINATA HIDAYATULLAH",
-      "foto1": "/members/zuda.jpg",
-      "foto2": "/necos/neco.png",
+      "foto1": "/members/zuda.webp",
+      "foto2": "/necos/neco.webp",
       "kataPengantar": {
         "pertama": "dia dikenal sangat rajin menabung dan tidak sombong loh... 💰🤲",
         "kedua": "kalau kamu lagi susah, dia pasti bantuin semampunya deh... 🤝✨"

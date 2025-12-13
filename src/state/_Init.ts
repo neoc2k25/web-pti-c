@@ -33,7 +33,7 @@ export const useForcedTim = create(
         set({ step: data });
       },
     }),
-    { name: "_CurrentStepTea" }
+    { name: "_CurrentStepTeam" }
   )
 );
 /** Get a current step (tim page by id) */
@@ -46,7 +46,7 @@ export const useForcedTimById = (id: number) =>
           set({ step: { id, no } }),
       }),
       {
-        name: `_CurrentStepTi_${id}`,
+        name: `_CurrentStepTim_${id}`,
       }
     )
   );
@@ -60,7 +60,7 @@ export const useForcedPositron = create(
       },
     }),
     {
-      name: `_CurrentStepPositro`,
+      name: `_CurrentStepPositron`,
     }
   )
 );

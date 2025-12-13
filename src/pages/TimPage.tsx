@@ -1,4 +1,4 @@
-import tim from "../../data/tim.json";
+import tims from "../../data/tim.json";
 import type { TypeTim, TypeTimMap } from "../Interface/_type";
 import { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
@@ -105,17 +105,17 @@ const TimPage = () => {
             </Btn>
           </div>
           <div className="w-full flex justify-center animate-opacity relative">
-            <img src="/necos/neco-melas.png" className="w-24 sm:w-32" alt="" />
-            <img src="/necos/neco-qna.png" className="w-44" alt="" />
+            <img src="/necos/neco-melas.webp" className="w-24 sm:w-32" alt="" />
+            <img src="/necos/neco-qna.webp" className="w-44" alt="" />
           </div>
         </Quest>
       )}
       {step === 2 && (
         <Quest>
           <TypedText ref={forcedRef}></TypedText>
-          <div className="w-full flex justify-between items-center">
+          <div className="w-full flex justify-between md:justify-evenly items-center">
             <img
-              src="/necos/neco-resek.png"
+              src="/necos/neco-resek.webp"
               className="relative w-24 sm:w-32 animate-opacity"
               alt=""
             />
@@ -138,7 +138,7 @@ const TimPage = () => {
         } flex flex-wrap justify-center gap-y-2 pt-4`}
       >
         <span ref={step === 3 ? forcedRef : undefined}></span>
-        {(tim as TypeTim).data.map((t: TypeTimMap) => (
+        {(tims as TypeTim).data.map((t: TypeTimMap) => (
           <div
             key={t.id}
             className="max-w-xs md:max-w-2xs rounded-base shadow-xs  text-white p-1 border border-[#00eaff] sm:mx-2 flex flex-col justify-between z-50"

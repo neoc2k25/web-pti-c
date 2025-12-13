@@ -7,3 +7,11 @@ export interface TypeTimMap {
 export interface TypeTim {
   data: TypeTimMap[];
 }
+export interface TypeGalerisMap {
+  id: number;
+  url: string;
+  title: string;
+}
+export interface TypeGaleris {
+  data: TypeGalerisMap[];
+}

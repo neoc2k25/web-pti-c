@@ -110,12 +110,12 @@ const TimById = () => {
             <div className="w-full flex justify-center gap-2  relative animate-opacity my-4">
               <img
                 src={`${data?.foto1}`}
-                className="w-28 sm:w-32 relative "
+                className="max-w-28 sm:max-w-44 relative "
                 alt=""
               />
               <img
-                src="/necos/neco bawa_hadiah.png"
-                className="w-32 md:w-44 relative"
+                src="/necos/neco bawa_hadiah.webp"
+                className="max-w-32 sm:max-w-44 relative"
                 alt=""
               />
             </div>
@@ -137,7 +137,7 @@ const TimById = () => {
           <Quest>
             <TypedText ref={forcedRef}></TypedText>
             <img
-              src="/necos/neco-senyum_dan_bertanya.png"
+              src="/necos/neco-senyum_dan_bertanya.webp"
               className="w-32 relative left-1/2 -translate-x-1/2 animate-opacity my-4"
               alt=""
             />
@@ -191,11 +191,11 @@ const TimById = () => {
             </div>
             <div className="w-full flex justify-center animate-opacity relative">
               <img
-                src="/necos/neco-melas.png"
+                src="/necos/neco-melas.webp"
                 className="w-24 sm:w-32"
                 alt=""
               />
-              <img src="/necos/neco-qna.png" className="w-44" alt="" />
+              <img src="/necos/neco-qna.webp" className="w-44" alt="" />
             </div>
           </Quest>
         )}
@@ -209,13 +209,13 @@ const TimById = () => {
             </div>
             <div className="flex gap-2 justify-center">
               <img
-                src="/necos/neco-bahagia.png"
-                className="w-32 animate-bounce"
+                src="/necos/neco-bahagia.webp"
+                className="w-32 animate__animated animate__bounce animate__infinite animate__slow"
                 alt=""
               />
               <img
-                src="/necos/neco-ye.png"
-                className="w-32 animate-bounce"
+                src="/necos/neco-ye.webp"
+                className="w-32 animate__animated animate__bounce animate__infinite animate__slow"
                 alt=""
               />
             </div>
@@ -236,11 +236,18 @@ const TimById = () => {
         {step.no === 5 && (
           <Quest>
             <TypedText ref={forcedRef}></TypedText>
-            <img
-              src="/necos/neco-gembira.png"
-              className="w-32 relative left-1/2 -translate-x-1/2 animate-opacity my-4"
-              alt=""
-            />
+            <div className="flex justify-evenly gap-2 items-center">
+              <img
+                src="/necos/neco-gembira.webp"
+                className="w-32 animate__animated animate__bounce animate__infinite animate__slow my-4"
+                alt=""
+              />
+              <img
+                src="/necos/neco-bahagia.webp"
+                className="w-32 animate__animated animate__bounce animate__infinite animate__slow my-4"
+                alt=""
+              />
+            </div>
             <Btn
               className={` ${
                 typedComplete === 1
@@ -269,7 +276,7 @@ const TimById = () => {
 
           <div className="max-w-sm md:max-w-3xl md:gap-4 shadow-xs text-white p-1 flex flex-col md:flex-row justify-evenly z-50">
             <img
-              className="rounded-t-base max-w-xs transition-all duration-500 bg-no-repeat rounded-xl md:rounded-3xl shadow-[0_0_12px_#00eaff]"
+              className="rounded-t-base max-w-full transition-all duration-500 bg-no-repeat rounded-xl md:rounded-3xl shadow-[0_0_12px_#00eaff]"
               // src={`${fotoId?.id === t.id ? fotoId.foto1 : t.foto2}`}
               src={`${data?.foto1}`}
               loading="lazy"
