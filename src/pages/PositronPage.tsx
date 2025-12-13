@@ -7,7 +7,6 @@ import Quest from "../component/Quest";
 import Btn from "../Element/Btn";
 import { moveButton } from "../utils/moveBtn";
 import type { TypeTim, TypeTimMap } from "../Interface/_type";
-import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 // Import Swiper styles
